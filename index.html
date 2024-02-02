@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+    <main class="container">
+        <img src="assets/Logo.png" alt="logo Alura">
+        <section class="container__decodificador">
+            <form>
+                <textarea id="msg" placeholder="Digite seu texto aqui"></textarea>
+                <div class="container__decodificador__footer">
+                    <div class="container__alert">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div class="container__buttons">
+                        <button onclick="criptografarTexto()">Criptografar</button>
+                        <button onclick="descriptografarTexto()">Descriptografar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id="container__mensagem">
+            <img src="assets/High quality products 1 1.png" alt="menina com lupa">
+            <h1>Nenhuma mensagem encontrada</h1>
+            <span>Digite um texto que você deseja crispantografar ou descriptografar.</span>
+        </section>
+
+    </main>
+    <script src="scripts/app.js"></script>
+    <!-- <script src="scripts/gpt.js"></script> -->
+</body>
+</html>
