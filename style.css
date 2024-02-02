@@ -24,6 +24,7 @@
 body {
     background-color: var(--cor-1);
     font-family: var(--fonte-primaria);
+    display: flex;
 }
 
 .container {
