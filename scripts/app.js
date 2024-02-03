@@ -24,9 +24,15 @@ function descriptografar(){
 }
 
 function copiar() {
-    var textoCop = document.getElementById('container__mensagem');
+  var textoCop = document.getElementById('msgCripto').textContent;
+
+  var inputTemporario = document.createElement("textarea");
+  inputTemporario.value = textoCop;
+  document.body.appendChild(inputTemporario);
   
-    textoCop.select();
-    document.execCommand('copy');
-    alert("Texto copiado.");
-}  
+  inputTemporario.select();
+  document.execCommand('copy');
+  document.body.removeChild(inputTemporario);
+
+  alert("Texto copiado!");
+}
