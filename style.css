@@ -128,7 +128,7 @@ button {
     color: var(--cor-6);
 }
 
-button:nth-child(2) {
+#btn-descripto {
     background-color: var(--cor-1);
     color: var(--cor-3);
     border: 1px solid var(--cor-3);

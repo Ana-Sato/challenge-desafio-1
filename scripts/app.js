@@ -9,8 +9,8 @@ function criptografar(){
   var resultCripto = texto.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat")
 
   
-  document.getElementById('container__mensagem').innerHTML = '<textarea readonly id="input-texto">' + resultCripto + 
-  '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+  document.getElementById('container__mensagem').innerHTML = '<p readonly id="msgCripto">' + resultCripto + 
+  '</p>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
 }
 
 function descriptografar(){
@@ -19,8 +19,8 @@ function descriptografar(){
 
     var resultDescripto = texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
   
-    document.getElementById('container__mensagem').innerHTML = '<textarea readonly id="input-texto">' + resultDescripto + 
-    '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+    document.getElementById('container__mensagem').innerHTML = '<p readonly id="msgCripto">' + resultDescripto + 
+    '</p>' + '<button class="btn-copiar" id="btn-descripto" onclick="copiar()">Copiar</button>'
 }
 
 function copiar() {

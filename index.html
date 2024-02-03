@@ -11,7 +11,6 @@
     <main class="container">
         <img src="assets/Logo.png" alt="logo Alura">
         <section class="container__decodificador">
-            <form>
                 <textarea id="msg" placeholder="Digite seu texto aqui"></textarea>
                 <div class="container__decodificador__footer">
                     <div class="container__alert">
@@ -19,11 +18,10 @@
                         <p>Apenas letras minúsculas e sem acento.</p>
                     </div>
                     <div class="container__buttons">
-                        <button onclick="criptografar()">Criptografar</button>
-                        <button onclick="descriptografar()">Descriptografar</button>
+                        <button id="btn-cripto" onclick="criptografar()">Criptografar</button>
+                        <button id="btn-descripto" onclick="descriptografar()">Descriptografar</button>
                     </div>
                 </div>
-            </form>
         </section>
         <section id="container__mensagem">
             <img src="assets/High quality products 1 1.png" alt="menina com lupa">
