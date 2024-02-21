@@ -1,32 +1,43 @@
-var textInput = document.querySelector("#msg");
-var outInput = document.querySelector("#container__mensagem");
+const textInput = document.querySelector("#msg");
+const outInput = document.querySelector("#container__mensagem");
 
 
-function criptografar(){
+function criptografar() {
 
-  var texto = textInput.value;
+  let texto = textInput.value;
 
-  var resultCripto = texto.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat")
+  let resultCripto = texto.replace(/e/g, "enter")
+  .replace(/i/g, "imes")
+  .replace(/a/g, "ai")
+  .replace(/o/g, "ober")
+  .replace(/u/g, "ufat");
 
-  
-  document.getElementById('container__mensagem').innerHTML = '<p readonly id="msgCripto">' + resultCripto + 
-  '</p>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+  document.getElementById('container__mensagem').innerHTML = '<text-area readonly id="msgCripto">' + resultCripto + 
+  '</text-area>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+
+ outInput.classList.add('auto-height'); 
 }
 
-function descriptografar(){
+function descriptografar() {
 
-    var texto = textInput.value;
+    let texto = textInput.value;
 
-    var resultDescripto = texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+    let resultDescripto = texto.replace(/enter/g, "e")
+    .replace(/imes/g, "i")
+    .replace(/ai/g, "a")
+    .replace(/ober/g, "o")
+    .replace(/ufat/g, "u");
   
-    document.getElementById('container__mensagem').innerHTML = '<p readonly id="msgCripto">' + resultDescripto + 
-    '</p>' + '<button class="btn-copiar" id="btn-descripto" onclick="copiar()">Copiar</button>'
+    document.getElementById('container__mensagem').innerHTML = '<text-area readonly id="msgCripto">' + resultDescripto + 
+    '</text-area>' + '<button class="btn-copiar" id="btn-descripto" onclick="copiar()">Copiar</button>'
+
+   outInput.classList.add('auto-height');
 }
 
 function copiar() {
-  var textoCop = document.getElementById('msgCripto').textContent;
+  let textoCop = document.getElementById('msgCripto').textContent;
 
-  var inputTemporario = document.createElement("textarea");
+  let inputTemporario = document.createElement("textarea");
   inputTemporario.value = textoCop;
   document.body.appendChild(inputTemporario);
   
