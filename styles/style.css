@@ -165,6 +165,12 @@ button {
     top: 90%;
 }
 
+@media (max-width: 1300px) {
+    .container__decodificador {
+        padding: 10% 0%;
+    }
+}
+
 
 @media (max-width: 768px) {
 
