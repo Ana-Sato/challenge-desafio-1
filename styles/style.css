@@ -58,9 +58,7 @@ body {
     outline: 0;
 }
 
-textarea::placeholder {  
-    color: var(--cor-2);
-    font-size: 2rem;
+c
     font-family: var(--fonte-primaria);  
 }
 
@@ -165,9 +163,47 @@ button {
     top: 90%;
 }
 
-@media (max-width: 1300px) {
+@media (min-width: 770px) and (max-width: 1300px) {
+
+    .container {
+        gap: 15px;
+    }
+
+    .container>img {
+        margin:0;
+    }
+
     .container__decodificador {
         padding: 10% 0%;
+    }
+
+    textarea::placeholder {  
+        color: var(--cor-2);
+        font-size: 1rem;
+    }
+
+    .container__buttons {
+        max-width: 550px;
+        width: 100%;
+        padding-top: 10px;
+        gap: 20px;
+    }
+
+    #container__mensagem {
+        height: auto;
+    }
+
+    #container__mensagem img {
+        width: 200px;
+    }
+
+    #container__mensagem h1 {
+        font-size: 1rem;
+       
+    }
+    
+    #container__mensagem span {
+        font-size: 0.8rem;
     }
 }
 
